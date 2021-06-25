@@ -1,6 +1,6 @@
 # docker_webUI
 
-###Steps to follow-
+### Steps to follow-
 1. Download all the files in your rhel8 server.
 2. Download httpd software using $yum install httpd -y
 4. Save cgi-doc.py in /var/www/cgi-bin folder of httpd and save the remaining in /var/www/html. cgi-doc.py is our backend file and remaining are the frontend files.
