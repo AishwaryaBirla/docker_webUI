@@ -1,8 +1,20 @@
 ## Welcome to GitHub Pages
+#### Task 07 👨🏻‍💻
+##### Javascript Integration with Docker
+Task Description 📄
+📌 In this task you have to create a Web Application for Docker (one of the great Containerization Tool which provides the user 
+Platform as a Service (PaaS)) by showing your own creativity and UI/UX designing skills to make the webportal user friendly.
+📌 This app will help the user to run all the docker commands.
 
-You can use the [editor on GitHub](https://github.com/AishwaryaBirla/docker_webUI/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![Run docker commands](run.png)
+![docker commands](dc.png)
+
+
+
+
+
+
 
 ### Markdown
 
