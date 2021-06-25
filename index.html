@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript Integration</title>
+        <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+        <div id='heading'>
+                <h1>Hello Everyone ☺</h1>
+        </div>
+        <div id='scroll'>
+                <a href="docker.html" class="help" target="_blank">
+                <marquee behavior="alternate" scrollamount="3" >Docker Commands </marquee></a>
+        
+        </div>
+        <div id="input">
+                <p>Give the docker command as a input:<br>
+                        <input type="Text" id="i1" />
+                </p>
+
+                <button onclick="sendata();">Run Command</button>
+        </div>
+        <div id="output">
+                <h2>Output</h2>
+        </div>
+        <pre>	<div id="d1">. </div> </pre>
+
+
+        <!-- Java Script -->
+        <script>
+                function sendata() {
+                        var xhr = new XMLHttpRequest();
+                        var i = document.getElementById("i1").value
+                        xhr.open("GET", "http://192.168.2.18/cgi-bin/doc-cgi.py?i=" + i, false);
+                        xhr.send();
+                        var out = xhr.responseText;
+                        document.getElementById("d1").innerHTML = out;
+                }
+        </script>
+</body>

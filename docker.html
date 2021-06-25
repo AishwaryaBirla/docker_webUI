@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Commands</title>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=Dancing+Script:wght@700&display=swap');
+
+     * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: url('background.png') no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-repeat: repeat-y;
+            height: 200%;
+        }
+        .blank{
+            width: 95vw;
+            height: 95vh;
+            background-color: rgb(219, 206, 206);
+            margin: 10px auto;
+        }
+       
+        .head h1{
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            font-size: 55px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-shadow: 2px 2px #558ABB;
+        }
+        .nav ul{
+            position: absolute;
+            top: 40px;
+            right: 80px;
+        }
+        .nav ul li{
+            list-style: none;
+        }
+        .nav ul li a{
+            background: black;
+            letter-spacing: .5rem;
+            font-size: 22px;
+            text-decoration: none;
+            color: white;
+            border: 1px solid red;
+            padding: 5px 25px;
+            cursor: pointer;
+        }
+
+        .nav ul li a:hover{
+            text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
+            
+        }
+        .blank p{
+            margin: 10px 10px;
+            padding: 0 35px;
+            font-size: 25px;
+            font-family: 'Baloo Bhai 2', cursive;
+            line-height: 25px;
+            text-align: justify;
+        } 
+
+        .command h2{
+            font-family: 'Damion', cursive;
+            text-align: center;
+            font-size: 45px;
+            text-transform: uppercase;
+            text-decoration: double;
+            text-shadow: 2px 2px #ff3300;
+            
+        }
+
+        .menu{
+            width: 45%;
+            display: inline-block;
+        }
+        .menu p{
+            line-height: 35px;
+            color:black ;
+            background-color:rgb(80, 255, 89);
+
+        }
+        .code{
+            float: right;
+            width: 45%;
+        }
+        
+        .code p{
+            line-height: 35px;
+            color:rgb(0, 0, 0) ;
+            background-color: rgb(255, 155, 6);
+
+        }
+        
+        
+    
+        .menu{
+            width: 90vw;
+            margin: 0 auto;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        table{
+            border: 2px solid red;
+            text-align: justify;            
+            width: 90vw;
+
+        }
+        th{
+            background-color: black;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        table, th, td {
+            border: 2px solid black;
+            font-size: 25px;
+            align-items: center;
+        }
+        
+        .dockerlearn{
+            text-decoration: none;
+            color: black;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            display: inline-block;
+            text-decoration-line: underline ;
+            position: absolute;
+            left: 40vw;
+        }
+
+        .dockerlearn:hover{
+            text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+
+        }
+        
+</style>
+</head>
+<body>
+    <div class="blank">
+            <div class='head'>
+                <h1>Docker</h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                </ul>
+            </div>
+            <p>
+                Docker is a tool designed to make it easier to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package.
+            </p>
+
+            <div class="command">
+                <h2>Docker Commands</h2>
+                <div class="menu">
+
+                    <table style="width:100%">
+                        <tr>
+                          <th>Description</th>
+                          <th>Command</th> 
+                        </tr>
+                        <tr>
+                          <td>Docker images which are pulled from hub.docker.com</td>
+                          <td>docker pull image_name:version </td>
+                         
+                        </tr>
+                        <tr>
+                          <td>To see the list of running containers</td>
+                          <td>docker ps </td>
+                      
+                        </tr>
+                        <tr>
+                            <td>To see the list of all containers</td>
+                            <td>docker ps -a </td>
+                        
+                        </tr>
+                        <tr>
+                            <td>To remove a image</td>
+                            <td>docker rmi image_name</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>To remove a container</td>
+                            <td>docker rm container_name </td>
+                        
+                        </tr>
+                        <tr>
+                            <td>To execute a command in the container</td>
+                            <td>docker exec container_name command</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>To run processes in isolated containers</td>
+                            <td>docker run options image</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>To start docker services</td>
+                            <td>systemctl start docker </td>
+                        
+                        </tr>
+                        <tr>
+                            <td>To see the docker status</td>
+                            <td>systemctl status docker</td>
+                        
+                        </tr>
+                      </table>
+                   
+
+            </div>
+            <div><a href="https://docs.docker.com" class="dockerlearn" target="_blank"> Learn More about Docker</a></div>
+        </div>
+
+    </body>
+</html>

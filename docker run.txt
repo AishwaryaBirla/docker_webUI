@@ -1,0 +1,6 @@
+systemctl start httpd
+systemctl disable firewalld
+systemctl start docker
+setnenforce 0
+chmod +x doc-cgi.py
+

@@ -1,0 +1,124 @@
+             
+
+                @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=Dancing+Script:wght@700&display=swap');
+
+                @import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+                * {
+                        margin: 0.05%;
+                        padding: 0.005%;
+                }
+                body{
+                        background-color:#669999;
+                        
+                }
+
+                #heading {
+                        padding: 10px;
+                        width: 80%;
+                        margin: 3% auto;
+                        justify-content: center;
+                        
+                        align-items: center;
+                        border-top-left-radius: 20px;
+                        border-bottom-right-radius: 25px;
+                }
+
+                #heading h1 {
+                        text-align: center;
+                        font-weight: bolder;
+                        font-size: 60px;
+			margin-top:3%;
+                        font-family: "Times New Roman", Times, serif;
+
+                }
+				
+	
+                .help{
+                        font-size: 25px;
+                        display: inline-block;
+                        position: absolute;
+                        top: 2%;
+                        right:4%;
+                        width: 25%;
+                        height: 5%;
+                        border: 1px solid white;
+                        text-decoration: none;
+                        color: white;
+                }
+                
+                #input {
+                        background: url('main.png') no-repeat center;
+                        width: 88%;
+                        height: 20%;
+                        margin: auto;
+			padding: 0.5%
+                }
+
+                #input p, input {
+                        text-align: center;
+                }
+
+
+                #input p{
+                        font-size: 25px;
+                        font-family: "Georgia", serif;
+                }
+
+                #input input{
+                        height: 8%;
+                        margin-top: 40px;
+                        width: 85%;
+                }
+
+                #input input[type = "text"]{
+                        font-size: 25px;
+                        font-family: "Georgia", serif;
+
+                }
+                button{
+                        margin: 50px auto ;
+                        display: block;
+                        width: 190px;
+                        height: 45px;
+                        border-top-left-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                        border: 1px solid red;
+                        font-weight: bolder;
+                        font-size: 20px;
+                        
+                }
+
+                button:hover{
+                        cursor: pointer;
+                        color: white;
+                        background-color: black;
+                }
+
+                #output{
+                        text-transform: uppercase;
+                        font-family: "Times New Roman", Times, serif;
+                        margin-top: 21px;
+                        margin-left: 20px;
+                        font-size: 30px; 
+                        
+                }
+
+                pre{
+                        align-items: center;
+                        width: 88%;
+                        margin: 0.02% auto;
+                        padding: 0.02%;
+                        text-align: center;
+                        background: wheat;
+                        border-top-left-radius: 28px;
+                        border-bottom-right-radius: 30px;
+                }
+                pre:hover{
+                        border: 1px solid black;
+                }
+                
+                
+                pre #d1{
+                        font-size: 20px;
+                        height: 200px;
+                }
